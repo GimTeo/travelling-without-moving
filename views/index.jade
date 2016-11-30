@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    p#mainTitle leave your footprint
+    -if (user)
+        p.userName welcome to footprint #{userName}
+    -else
+        p.userName guest
+    a(href = '/')#home Home
+    br
+    if(user)
+        button(onclick = "location.href='/user'") my inform
+        button(onclick = "location.href='/logout'") logout
+        button(onclick = "location.href='/bbs_write'") write
+    else
+        button(onclick = "location.href='/login'") login
+        button(onclick = "location.href='/newUser'") newUser
+    block contents

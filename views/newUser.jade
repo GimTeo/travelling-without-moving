@@ -1,0 +1,30 @@
+//
+   Created by a11 on 2016. 11. 27..
+
+extends index
+
+block contents
+    h3 Sign Up
+    form(action='/newUser', method='post')
+        label Email*
+        span#email_error
+        input#email(type='text', name='email', value='')
+        br
+        label Nickname*
+        span#nickname_error
+        input#nickname(type='text', name='nickname', value='')
+        br
+        label Password*
+        span#password_error
+        input#password(type='text', name='password', value='')
+        br
+        label Password Confirmation*
+        span#password_confirmation_error
+        input#password_confirmation(type='text', name='passwordConfirmation', value='')
+        p
+        button(type ='submit') apply
+    button(onclick = "location.href='/'") back to main
+// javascript
+
+
+

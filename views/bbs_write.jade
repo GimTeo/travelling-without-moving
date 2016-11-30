@@ -1,0 +1,16 @@
+//
+   Created by a11 on 2016. 11. 21..
+
+extends index
+
+block contents
+    h3 New Post
+    form(action='/bbs_write', method='post')
+        p Title
+        input(size='79',type='text', name='title', value='')
+        brbr
+        p body
+        textarea(rows='30', cols='60',name='content')
+        button(type='submit') Submit
+    button(onclick = "location.href='/'") back to main
+

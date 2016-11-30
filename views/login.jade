@@ -1,0 +1,15 @@
+//
+   Created by a11 on 2016. 11. 29..
+
+extends index
+
+block contents
+    br
+    p#sub  #{subtitle}
+    form(action = '/login' , method='POST')
+        input(size='79', name='email', placeholder="input email")#email_input
+        br
+        input(size='79', name='password',placeholder="inpur password")#password_input
+        br
+        button(type ='submit') apply
+    button(onclick = "location.href='/'") back to main
